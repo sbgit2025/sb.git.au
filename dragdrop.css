@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+  }
+  h2 {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+  .items, .targets {
+    width: 45%;
+  }
+  .draggable, .dropzone {
+    background: white;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    cursor: grab;
+    text-align: center;
+  }
+  .dropzone.correct {
+    border-color: green;
+    background: #d4edda;
+  }
+  .dropzone.incorrect {
+    border-color: red;
+    background: #f8d7da;
+  }
+  .controls {
+    text-align: center;
+    margin-top: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #0056b3;
+  }
+  #score {
+    margin-top: 10px;
+    font-weight: bold;
+  }
