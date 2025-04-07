@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <link rel="stylesheet" 
+       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+      crossorigin="anonymous">
+      <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+
+    <!-- JQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></head>
+    <!-- Our codes -->
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+    
+    <title>Sugunasree Badveli</title>
+</head>
+<body>
+  <!-- floating section indicators -->
+
+  <div class="section-indicators-block">
+
+    <div class="section-indicator">
+        <a id="bio-section-indicator" href="#" data-toggle="tooltip" data-placement="left" title="Jump to Bio" onclick="javascript:toolTipReset()"><i class="fas fa-circle"></i></a>
+    </div>
+
+    <div class="section-indicator">
+        <a id="portfolio-section-indicator" href="javascript:scrollToAnchor('portfolio');" data-toggle="tooltip" data-placement="left" title="Jump to Portfolio" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
+    </div>
+
+    <div class="section-indicator">
+        <a id="skill-summary-section-indicator" href="javascript:scrollToAnchor('skill-summary');" data-toggle="tooltip" data-placement="left" title="Jump to Skill Summary" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
+    </div>
+
+    <div class="section-indicator">
+        <a id="career-highlights-section-indicator" href="javascript:scrollToAnchor('career-highlights');" data-toggle="tooltip" data-placement="left" title="Jump to Career Hightlights" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
+    </div>
+
+    <div class="section-indicator">
+        <a id="education-section-indicator" href="javascript:scrollToAnchor('education');" data-toggle="tooltip" data-placement="left" title="Jump to Education" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
+    </div>
+
+    <div class="section-indicator">
+        <a id="contact-section-indicator" href="javascript:scrollToAnchor('contact');" data-toggle="tooltip" data-placement="left" title="Jump to Contact" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
+    </div>
+
+  </div>
+
+    <a name="bio"></a>
+    <div id="bio" class="container section-visual-boundry">
+  
+        <div class="row justify-content-center">
+          
+          <div  >
+            <img class="hero" src="images/portrait.jpg" alt="portrait" >
+          </div>
+  
+          <div class="col-12 col-sm-8 col-md-8">
+            <p class="page-title">Sugunasree Badveli</p>
+            <p class="page-subtitle">Web Developer</p>
+            <p class="bio-block">I am an experienced web and software developer with over six years of expertise in HTML, CSS, ASP, .NET, JavaScript, SQL, and XML. Recently upskilled in Python, React, Django, and modern web development technologies through Coursera.
+              Previous roles include Programmer, Web Developer, and Programming Officer, where I managed all project stages, provided technical support, and developed web/database interactions. 
+              After a career break, I am eager to re-enter the workforce, combining my past experience with new skills to deliver efficient, user-friendly web solutions.
+              
+          </div>
+        </div>
+  
+    </div>
+    <hr />
+
+    <a name="portfolio"></a>
+    <p id="portfolio" class="section-heading section-visual-boundry">Portfolio</p>
+    
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col bm-2">
+          <div class="card h-100">
+            <img src="images/weatherapp.jpg" class="card-img-top" alt="EurOrbit">
+            <div class="card-body">
+              <h5 class="card-title">Weather forecast</h5>
+              <p class="card-text">Weather Forecast written in JavaScript</p>
+              <a href="weatherapp.html" target="_blank" class="btn btn-primary">Try It Out</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col bm-2">
+          <div class="card h-100">
+            <img src="images/Taskmanage.jpg" class="card-img-top" alt="Task Manager">
+            <div class="card-body">
+              <h5 class="card-title">Task Manager</h5>
+              <p class="card-text">Task Manager-Add and remove Tasks</p>
+              <a href="taskmanageapp.html" target="_blank" class="btn btn-primary">Add Task</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col bm-2">
+          <div class="card h-100">
+            <img src="images/github.jpg" class="card-img-top" alt="GitHub">
+            <div class="card-body">
+              <h5 class="card-title">GitHub</h5>
+              <p class="card-text">Take a look at my other projects on GitHub</p>
+              <a href="https://github.com/sbgit2025" target="_blank" class="btn btn-primary">Go to my GitHub</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <hr />
+    
+    <a name="skill-summary"></a>
+    <p id="skill-summary" class="section-heading section-visual-boundry">Skill Summary</p>
+    
+    <p data-toggle="tooltip" data-placement="bottom" 
+       title="These tags tell you what technologies I use"
+       onclick="javascript:toolTipReset()">
+        <span class="keyword-magnet">HTML</span>
+        <span class="keyword-magnet">CSS</span>
+        <span class="keyword-magnet">JavaScript</span>
+     
+    </p>
+    
+    <ul>
+        <li>Full stack web developer</li>
+        <li>Mobile application developer for iOS and Android</li>
+        <li>Graphic designer with Adobe Suite</li>
+    </ul>
+    
+    <hr />
+    
+    <a name="career-highlights"></a>
+    <p id="career-highlights" class="section-heading section-visual-boundry">Career Highlights</p>
+    <p class="section-subheading">Green Lane Studios, East Maitland, Australia</p>
+    <p class="section-small-heading">Programmer</p>
+    
+    <ul>
+        <li>Developed and implemented IT solutions, websites, and software applications </li>
+        <li>Managed all phases of the Software Development Life Cycle </li>
+    </ul>
+    
+    <p class="section-subheading">Manchester Unity, St Leonards, NSW Australia</p>
+    <p class="section-small-heading">Analyst / Programmer</p>
+    <ul>
+        <li>Developed robust web and desktop applications to meet client specifications</li>
+        <li>Provided timely and effective resolution to programming issues reported by clients</li>
+    </ul>
+    <p class="section-subheading">TLRU, Illawarra Institute TAFE NSW, Australia
+        
+    </p>
+    <p class="section-small-heading">Web Developer</p>
+    <ul>
+        <li>Designed interactive e-learning activities, including drag-and-drop and matching items</li>
+        <li>Developed utilities to automate routine tasks. </li>
+    </ul>
+    <p class="section-subheading">Open Training and Education Network-DE, 
+      NSW Australia, 
+      
+    </p>
+    <p class="section-small-heading">Multimedia programming officer </p>
+    <ul>
+        <li>Designed and developed online e-learning platforms </li>
+        <li>administered web server systems and managing all facets of the LMS </li>
+        <li>Created reusable Learning Object stylesheets and templates </li>
+         <li>Provided technical guidance and mentorship to junior web development teams</li>
+    </ul>
+    <hr />
+    
+    <a name="education"></a>
+    <p id="education" class="section-heading section-visual-boundry">Education</p>
+    <p class="section-subheading">S.K. University, India</p>
+    <p class="section-small-heading">Bachelor Degree in Electronics & Communications Engineering
+         
+    </p>
+    
+    
+    <hr />
+    
+    <a name="contact"></a>
+    <p id="contact" class="section-heading section-visual-boundry">Contact</p>
+    
+    <p>Email: <a href="mailto:suguna12@hotmail.com" data-toggle="tooltip" data-placement="bottom" title="Tap here to email me" onclick="javascript:toolTipReset()">suguna12@hotmail.com</a></p>
+    <hr />
+    
+    <!-- <img class="hero" src="images/footer_banner.jpg" alt="banner" /> -->
+    
+    <a name="bottom-of-document"></a>
+    
+</body>
+
+</html>
