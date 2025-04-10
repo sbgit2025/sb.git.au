@@ -763,6 +763,15 @@ footer {
     color: #aaa;
 }
 
+div.studentanaliser {
+    width:100%;
+    overflow:auto;
+  }
+  div.studentanaliser div{
+    width:33%;  
+    float:left;
+    
+  }
 @media only screen and (max-width: 767px), only screen and (max-height: 550px) {
 
     [class~=bio-block] {
