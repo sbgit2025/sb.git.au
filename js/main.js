@@ -1,16 +1,9 @@
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-        event.preventDefault();
-    document.getElementById("response-message").textContent = "Thank you for reaching out!";
-});
-
-
-// When the document is ready, initialize tooltips
 $(document).ready(function () {
+    // Initialize Bootstrap tooltips for elements with the data-toggle="tooltip" attribute
     $('[data-toggle="tooltip"]').tooltip();
 });
 
-// Function to hide all active tooltips
 function toolTipReset() {
+    // Hide any visible tooltips
     $('.tooltip').tooltip('hide');
 }
-
